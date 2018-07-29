@@ -1,9 +1,6 @@
 <?php
 $con=mysqlI_connect("localhost","root","","oil_price_chart");
 mysqli_query($con,"SET NAMES utf8");
-
-
-
 $result=mysqli_query($con,"SELECT * FROM `oil_price_chart` ORDER BY date");
 $num = mysqli_num_rows($result);
 if ($result) {
